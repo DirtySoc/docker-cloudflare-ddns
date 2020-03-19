@@ -1,5 +1,5 @@
-ARG S6_ARCH
-FROM oznu/s6-alpine:3.11-${S6_ARCH:-amd64}
+# ARG S6_ARCH
+FROM dirtysoc/docker-s6-alpine:armhf
 
 RUN apk add --no-cache jq curl bind-tools
 
